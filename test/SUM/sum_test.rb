@@ -9,8 +9,8 @@ require_solution 'SUM'
 class ClientTest < Minitest::Test
 
 
-  def returns_0_for_the_sum_of_0_and_0
-
+  def test_sum
+    assert_equal 0, Sum.new.sum(0, 0), 'returns 0 when summing 0 and 0'
   end
 
   def test_sum
@@ -18,4 +18,5 @@ class ClientTest < Minitest::Test
   end
 
 end
+
 
